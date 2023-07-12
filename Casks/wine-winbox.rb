@@ -11,4 +11,5 @@ cask "wine-winbox" do
     name "MikroTik Winbox"
     desc "A simple script to start MikroTik Winbox"
     homepage "https://mikrotik.com/download"
-  end
+
+end
