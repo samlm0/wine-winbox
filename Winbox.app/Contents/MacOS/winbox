@@ -1,0 +1,14 @@
+#!/bin/bash
+BUNDLERESOURCEPATH="$(dirname "$0")/../Resources"
+
+if [ -d $WINEPREFIX ];then
+    mkdir $WINEPREFIX
+fi
+
+PLUTIL_REGEX="s/.*<string>\(.*\)<\/string>.*/\1/p"
+BUNDLE_ID="$(plutil -extract CFBundleIdentifier xml1 -o - "$BUNDLERESOURCEPATH/../Info.plist" | sed -n "$PLUTIL_REGEX")"
+
+export WINEPREFIX="$HOME/Library/Application Support/${BUNDLE_ID}"
+
+/opt/homebrew/bin/wine64 regedit.exe $BUNDLERESOURCEPATH/better_font.reg
+/opt/homebrew/bin/wine64 $BUNDLERESOURCEPATH/winbox.exe

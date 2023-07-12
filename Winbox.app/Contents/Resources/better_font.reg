@@ -1,0 +1,32 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink]
+"Arial"="Lantinghei.ttc"
+"Lucida Sans Unicode"="Lantinghei.ttc"
+"Microsoft Sans Serif"="Lantinghei.ttc"
+"MS Sans Serif"="Lantinghei.ttc"
+"SimSun"="Lantinghei.ttc"
+"Tahoma"="Lantinghei.ttc"
+"Tahoma Bold"="Lantinghei.ttc"
+
+[HKEY_CURRENT_USER\Software\Wine\X11 Driver]
+"ClientSideAntiAliasWithCore"="Y"
+"ClientSideAntiAliasWithRender"="Y"
+"ClientSideWithRender"="Y"
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"FontSmoothing"="2"
+"FontSmoothingType"=dword:00000002
+"FontSmoothingGamma"=dword:00000578
+"FontSmoothingOrientation"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Hardware Profiles\Current\Software\Fonts]
+"LogPixels"=dword:00000070
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\FontSubstitutes]
+"MS Shell Dlg"="SimSun"
+"SimSun"="AR PL UMing CN"
+"NSimSun"="AR PL UMing CN"
+"Tms Rmn"="NSimSun"
+"仿宋"="NSimSun"
+"华文中宋"="NSimSun"
